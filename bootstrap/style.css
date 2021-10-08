@@ -37,8 +37,8 @@ h3 {
     padding-top: 50px;
   }
 
-  .btn {
-  background-color: #008080;
+.btn {
+  background-color: #008080 !important;
 }
 
 }
