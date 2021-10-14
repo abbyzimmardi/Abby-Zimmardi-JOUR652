@@ -1,21 +1,33 @@
 #content {
-    width:100%;
-    max-width: 900px;
-    margin: 0 auto;
+  width:100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 #byline {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    font-style: italic;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: italic;
 }
 
 h1 {
-    font-family: Helvetica; sans-serif;
-    font-size: 20px;
+  font-family: Helvetica; sans-serif;
+  font-size: 20px;
 }
 
 p {
-    font-family: Georgia, serif;
-    font-size: 13px;
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+blockquote {
+  font-size: 24px;
+  font-family: Georgia, serif;
+  color: black;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  padding-left: 15px;
+
 }
