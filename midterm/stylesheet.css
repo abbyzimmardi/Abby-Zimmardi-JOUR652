@@ -14,5 +14,41 @@ p {
 }
 
 #content {
-  
+width: 900px;
+margin: 0 auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*I put the captions into a DIV with an ID called caption, so I could stylize the captions separately from the story content.*/
+
+#caption {
+  font-family: Georgia;
+  font-size: 10px;
+  font-style: italic;
+}
+
+#byline {
+  line-height: 2px;
+}
+
+
+blockquote {
+  margin: 0;
+}
+
+.pullquote {
+  float: right;
+  width: 200px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 25px;
+  font-size: 20px;
+  text-align: left;
+  color: #50BDE7 ;
+  font-family: Georgia;
 }
