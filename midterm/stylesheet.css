@@ -21,7 +21,7 @@ p {
 #content {
 width: 900px;
 margin: 0 auto;
-
+column-count: 1;
 }
 
 img {
