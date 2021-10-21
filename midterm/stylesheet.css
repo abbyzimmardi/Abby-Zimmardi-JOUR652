@@ -30,9 +30,7 @@ img {
   margin-right: auto;
 }
 
-/*I put the captions into a DIV with an ID called caption, so I could stylize the captions separately from the story content.*/
-
-#caption {
+figcaption {
   font-family: Georgia;
   font-size: 10px;
   font-style: italic;
@@ -94,6 +92,8 @@ blockquote {
 ul {
   line-height: 25px;
 }
+
+/* I used the media queries below so the page would look good on different sized browsers*/
 
 @media only screen and (max-width: 900px) {
   #content {
