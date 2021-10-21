@@ -1,21 +1,27 @@
 h1 {
   font-family: Georgia;
-  font-size: 25px;
+  font-size: 28px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 h2 {
   font-family: Georgia;
-  font-size: 20px;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 p {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
+  line-height: 22px;
 }
 
 #content {
 width: 900px;
 margin: 0 auto;
+
 }
 
 img {
@@ -30,10 +36,12 @@ img {
   font-family: Georgia;
   font-size: 10px;
   font-style: italic;
+  color: #484A4A;
 }
 
 #byline {
   line-height: 2px;
+  padding-bottom: 10px;
 }
 
 
@@ -45,10 +53,44 @@ blockquote {
   float: right;
   width: 200px;
   font-weight: bold;
-  padding: 15px;
-  margin: 25px;
+  padding: 10px;
+  margin: 20px;
   font-size: 20px;
   text-align: left;
-  color: #50BDE7 ;
+  color: #50BDE7;
   font-family: Georgia;
+}
+
+.masthead {
+  padding-bottom: 25px;
+  padding-top: 15px;
+  margin; auto;
+  width: 100%;
+}
+
+.trophy {
+  float: left;
+  padding: 15px 15px 15px 0;
+}
+
+.trophycap {
+  float: left;
+  padding-right: 18px;
+  padding-bottom: 15px;
+}
+
+.lastcaption {
+  padding-left: 200px;
+}
+
+.whitespacetop {
+  padding-top: 20px;
+}
+
+.whitespacebottom {
+  padding-bottom: 20px;
+}
+
+ul {
+  line-height: 25px;
 }
