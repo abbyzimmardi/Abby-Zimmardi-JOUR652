@@ -82,4 +82,70 @@ body {
     overflow-x: hidden !important;
 }
 
+/*media queries below*/
+
+@media only screen and (max-width: 768px) {
+ .bi {
+   font-size: 1em;
+ }
+
+.headshot {
+  width: 80%;
+}
+
+.col-md-6 {
+  width: 100%;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 13px;
+}
+
+.education {
+  font-size: 16px;
+}
+
+ul {
+  font-size: 14px;
+}
+
+.contact {
+  font-size: 12px;
+}
+
+.experience {
+  width: 100%;
+  border-left: solid white 30px;
+  border-right: solid white 30px;
+}
+
+.col-md-5 {
+  width: 100%;
+  border-left: solid white 30px;
+  border-right: solid white 30px;
+}
+
+.awards {
+  width: 100%;
+  border-left: solid white 30px;
+  border-right: solid white 30px;
+}
+
+#contact {
+  font-size: 18px;
+}
+
+}
 /*need to add media query to make the font smaller as the page gets smaller and i need to fix the banner, need to change the colors of the links*/
