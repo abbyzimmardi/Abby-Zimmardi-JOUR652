@@ -2,25 +2,29 @@
   font-size: 3em;
   font-weight: 700;
   text-align: center;
-  font-family: font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .byline {
   font-size: 1em;
   text-transform: uppercase;
-  font-family: font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 p {
-  font-fmaily: georgia, serif;
+  font-family: georgia, serif;
   line-height: 180%;
 }
 
 .chapter {
   font-size: 2em;
-  font-family: font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+}
+
+.container {
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -39,4 +43,13 @@ figcaption {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.footer {
+  background: #16222A;
+  color: white;
+  margin-top:100px;
+  height: 60px;
+  text-align: center;
+  font-size: 18px;
 }
