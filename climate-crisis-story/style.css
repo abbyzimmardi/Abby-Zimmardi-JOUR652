@@ -1,15 +1,41 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topper {
+  position: relative;
+}
+
+.text-block {
+  position: relative;
+  background-color: #f4bc01;
+  opacity: 83%;
+  color: white;
+  top: 300px;
+  text-align: center;
+}
+
 .headline {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 700;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+.subhead {
+  font-size: 1.5em;
+  font-weight: 100;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
 
 .byline {
   font-size: 1em;
-  text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
+  text-align: left;
+  font-size: 1em;
 }
 
 p {
@@ -27,12 +53,72 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-img {
+.pullquote {
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px;
+  font-size: 2em;
+  text-align: left;
+  color: #f4bc01;
+  font-family: 'Montserrat', sans-serif;
+  border-left: 10px solid #f4bc01;
+}
+
+.attribution {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  font-size: 0.75em;
+}
+
+.sidebar {
+  border-top: 8px solid #f4bc01;
+  border-bottom: 8px solid #f4bc01;
+  padding: 10px;
+  margin: 30px;
+}
+
+.sidebartext {
+  font-family: georgia, serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+/*Three hyperlink states*/
+a:link {
+  color: #2538F8;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: #F4BC01;
+}
+/*End of hyperlink states*/
+
+.heading {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #f4bc01;
+  text-transform: uppercase;
+}
+
+ul {
+  font-family: georgia, serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+/*img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
+}*/
 
 .row {
   text-align: center;
@@ -49,7 +135,10 @@ figcaption {
   background: #16222A;
   color: white;
   margin-top:100px;
-  height: 60px;
+  height: 35px;
   text-align: center;
   font-size: 18px;
 }
+
+
+/*media queries here*/
