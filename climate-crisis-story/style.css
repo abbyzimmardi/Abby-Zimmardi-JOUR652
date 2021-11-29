@@ -4,14 +4,18 @@
   width: 100%;
 }
 
+/*I struggled to get the background photo to be responsive for different sized screens. I used my notes from when you showed us in class and I Googled it, but I still couldn't figure it out. I would love to go over this again when you have a chance.
+
+I also could not get the navbar to be on top of the background image.*/
 .topper {
   position: relative;
+  margin-top: -50px;
 }
 
 .text-block {
   position: relative;
   background-color: #f4bc01;
-  opacity: 83%;
+  opacity: 85%;
   color: white;
   top: 300px;
   text-align: center;
@@ -29,6 +33,8 @@
   font-weight: 100;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  margin-top: -40px;
+  padding-bottom: 20px;
 }
 
 .byline {
@@ -41,16 +47,13 @@
 p {
   font-family: georgia, serif;
   line-height: 180%;
+  font-size: 1em;
 }
 
 .chapter {
   font-size: 2em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-}
-
-.container {
-  font-family: 'Montserrat', sans-serif;
 }
 
 .pullquote {
@@ -62,6 +65,19 @@ p {
   color: #f4bc01;
   font-family: 'Montserrat', sans-serif;
   border-left: 10px solid #f4bc01;
+}
+
+.pullquote2 {
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px;
+  font-size: 2em;
+  text-align: left;
+  color: #f4bc01;
+  font-family: 'Montserrat', sans-serif;
+  border-left: 10px solid #f4bc01;
+  width: 50%;
+  float: right;
 }
 
 .attribution {
@@ -113,22 +129,44 @@ ul {
   text-align: left;
 }
 
-/*img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}*/
-
-.row {
-  text-align: center;
-}
-
 figcaption {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.caption2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-align: left;
+}
+
+.graphic {
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
   width: 50%;
+  float: right;
+}
+
+.graphic2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.contributions {
+  font-style: italic;
 }
 
 .footer {
@@ -140,5 +178,93 @@ figcaption {
   font-size: 18px;
 }
 
-
 /*media queries here*/
+
+@media only screen and (max-width: 900px) {
+  #content {
+    width: 500px;
+  }
+
+  .headline {
+    font-size: 3em;
+  }
+
+  .subhead {
+    font-size: 1.2em;
+    margin-top: -20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #content {
+    width: 400px;
+  }
+
+  .container {
+    font-size: 10px;
+  }
+
+  figcaption {
+    font-size: 8px;
+  }
+
+  .caption2 {
+    font-size: 8px;
+  }
+
+  .pullquote {
+    font-size: 15px;
+  }
+
+  .pullquote2 {
+    font-size: 15px;
+  }
+
+  .sidebar {
+    border-top: 5px solid #f4bc01;
+    border-bottom: 5px solid #f4bc01;
+    padding: 10px;
+    margin: 30px;
+  }
+
+  .sidebartext {
+    font-size: 10px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  ul {
+    font-size: 10px;
+  }
+
+  .graphic {
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 90%;
+    float: right;
+  }
+
+  .graphic2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .col-md-6 {
+    width: 80%;
+    padding-left: 110px;
+  }
+
+  .headline {
+    font-size: 2em;
+  }
+
+  .subhead {
+    font-size: 0.80em;
+    margin-top: -20px;
+  }
+}
