@@ -267,10 +267,4 @@ figcaption {
     font-size: 0.80em;
     margin-top: -20px;
   }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
 }
