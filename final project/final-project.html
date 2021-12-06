@@ -27,9 +27,9 @@
     <body>
 
   <!-- Navbar start-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">The Daily Checkmate</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -64,20 +64,42 @@
 
 
 <!--background image here and possible scrolly telling-->
-<div class="topper">
-  <img src="Mutesi 1.png" alt="young child on bottome left of the photo looks to the right" style="width:100%;">
+<!--<div class="topper">
+  <img src="Mutesi1.png" alt="young child on bottome left of the photo looks to the right" style="width:100%;">
   <div class="bottom-right">Game of her Life</div>
-</div>
+</div>-->
 <!--end image/scrolly telling-->
 
 
+
+<main>
+  <section id="scrolly">
+    <div class="sticky-thing">
+      <img src="Mutesi1.png" alt="young child on bottome left of the photo looks to the right" style="width:100%;">
+    </div>
+    <article>
+      <div class="step" data-step="1">
+        <p class="headline">Game of her Life</p>
+      </div>
+      <div class="step" data-step="2">
+        <p class="byline">By Tim Crothers</p>
+      </div>
+      <br>
+      <br>
+      <div class="step" data-step="3">
+        <p class="dek">She's 14, lives in the slums of Uganda and is just now learning to read. But Phiona Mutesi's instincts have made her a player to watch in international chess</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="outro"></section>
+</main>
+
+<br><br><br><br>
+
+
+
   <div class="container">
-
-    <p class="headline">Game of her life</p>
-
-    <p class="byline">Tim Crothers</p>
-
-  <br>
 
 <!--for now this will be my marker for sections, change later and add chess piece here-->
     <p class="chapter">SHE FLIES TO</p>
@@ -89,7 +111,7 @@
   <br>
 
     <figure>
-      <img src="Mutesi 1.png" alt="young child on bottome left of the photo looks to the right">
+      <img src="Mutesi1.png" alt="young child on bottome left of the photo looks to the right">
       <figcaption>Caption: caption goes here for image, video or graphic above</figcaption>
     </figure>
 
@@ -335,8 +357,6 @@
 <!--Footer start-->
   <footer class="footer">
       <div class="container">
-         <span class="text-muted">Footer Text</span>
-          <br>
          <span class="text-muted">Abby Zimmardi © 2021</span>
        </div>
      </footer>
@@ -347,6 +367,57 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+
+
+  <!-- <div class='debug'></div> -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <script>
+    // using d3 for convenience
+    var main = document.querySelector("main");
+    var scrolly = main.querySelector("#scrolly");
+    var sticky = scrolly.querySelector(".sticky-thing");
+    var article = scrolly.querySelector("article");
+    var steps = article.querySelectorAll(".step");
+
+    // initialize the scrollama
+    var scroller = scrollama();
+
+    // scrollama event handlers
+    function handleStepEnter(response) {
+      // response = { element, direction, index }
+      var el = response.element;
+
+      // remove is-active from all steps
+      // then add is-active to this step
+      steps.forEach(step => step.classList.remove('is-active'));
+      el.classList.add('is-active');
+
+      // update graphic based on step
+      sticky.querySelector("p").innerText = el.dataset.step;
+    }
+
+    function init() {
+      // 2. setup the scroller passing options
+      // 		this will also initialize trigger observations
+      // 3. bind scrollama event handlers (this can be chained like below)
+      scroller
+        .setup({
+          step: "#scrolly article .step",
+          offset: 0.33,
+          debug: true
+        })
+        .onStepEnter(handleStepEnter);
+
+      // setup resize event
+      window.addEventListener("resize", scroller.resize);
+    }
+
+    // kick things off
+    init();
 
 
   </body>

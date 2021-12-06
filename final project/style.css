@@ -1,3 +1,9 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .topper {
   position: relative;
   text-align: center;
@@ -14,17 +20,27 @@
 }
 
 .headline {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 700;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+
 }
 
 .byline {
-  font-size: 1em;
+  font-size: 2em;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  font-weight: 500;
+}
+
+.dek {
+  font-size: 1.2em;
+  font-weight: 650;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
 }
 
 p {
@@ -46,7 +62,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
 }
 
 .row {
@@ -64,7 +80,202 @@ figcaption {
   background: #16222A;
   color: white;
   margin-top:100px;
-  height: 60px;
+  height: 30px;
   text-align: center;
   font-size: 18px;
 }
+
+
+
+
+/*Scrollytelling*/
+#scrolly {
+  position: relative;
+}
+
+article {
+  position: relative;
+  padding-top: 400px;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.sticky-thing {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 0;
+  top: 9.5vh;
+  height: 75vh;
+  /* Center everything inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step {
+  margin: 0 auto 2rem auto;
+  color: #fff;
+  padding-left: 200px;
+}
+
+.step:last-child {
+  margin-bottom: 200px;
+  padding-bottom: 600px;
+}
+
+.step p {
+  padding-left: 300px;
+}
+
+
+
+/*add new values for scrolly telling*/
+@media only screen and (max-width: 900px) {
+  #content {
+    width: 500px;
+  }
+
+  .headline {
+    font-size: 2em;
+  }
+
+  .byline {
+    font-size: 1em;
+  }
+
+  .dek {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  /*scrolly telling*/
+  .step {
+    margin: 0 auto 2rem auto;
+    color: #fff;
+    padding-left: 100px;
+  }
+
+  .step:last-child {
+    margin-bottom: 0;
+    padding-bottom: 600px;
+  }
+
+  .step p {
+    padding-left: 200px;
+  }
+
+  .step:last-child {
+    margin-bottom: 10px;
+    padding-bottom: 500px;
+  }
+  /*end scrolly telling*/
+}
+
+@media only screen and (max-width: 600px) {
+  #content {
+    width: 400px;
+  }
+
+  .container {
+    font-size: 10px;
+  }
+
+  figcaption {
+    font-size: 8px;
+  }
+
+/*scrolly telling*/
+  .step {
+    margin: 0 auto 2rem auto;
+    color: #fff;
+    padding-left: 50px;
+  }
+
+  .step:last-child {
+    margin-bottom: 0;
+    padding-bottom: 600px;
+  }
+
+  .step p {
+    padding-left: 100px;
+  }
+/*end scrolly telling*/
+
+.headline {
+  font-size: 1.2em;
+}
+
+.byline {
+  font-size: 0.7em;
+}
+
+.dek {
+  font-size: 0.58em;
+
+}
+
+
+
+
+
+
+/*things to pull from
+  .caption2 {
+    font-size: 8px;
+  }
+
+  .pullquote {
+    font-size: 15px;
+  }
+
+  .pullquote2 {
+    font-size: 15px;
+  }
+
+  .sidebar {
+    border-top: 5px solid #f4bc01;
+    border-bottom: 5px solid #f4bc01;
+    padding: 10px;
+    margin: 30px;
+  }
+
+  .sidebartext {
+    font-size: 10px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  ul {
+    font-size: 10px;
+  }
+
+  .graphic {
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 90%;
+    float: right;
+  }
+
+  .graphic2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .col-md-6 {
+    width: 80%;
+    padding-left: 110px;
+  }
+
+  .subhead {
+    font-size: 0.80em;
+    margin-top: -20px;
+  }
+}*/
