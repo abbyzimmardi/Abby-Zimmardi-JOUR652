@@ -55,8 +55,8 @@ p {
 
 .container {
   font-family: 'Montserrat', sans-serif;
-  width: 1000px;
-  margin: 0 auto;
+  /*width: 1000px;
+  margin: 0 auto;*/
 }
 
 img {
@@ -88,13 +88,25 @@ figcaption {
   font-weight: 700;
   padding: 15px;
   margin: 35px;
-  border-top: 12px solid;
+  border-top: 12px solid #905E6A;
   width: 65%;
-  border-image: linear-gradient(to right, #6FADC8 50%, #FFF 50%) 100% 1;
+  border-image: linear-gradient(to right, #905E6A 50%, #FFF 50%) 100% 1;
   text-align: left;
-  margin-left: 260px;
+  margin-left: 280px;
 }
 
+.pullquote2 {
+  font-family: georgia, serif;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 5px;
+  margin: 20px;
+  border-top: 12px solid #905E6A;
+  width: 65%;
+  border-image: linear-gradient(to right, #905E6A 50%, #FFF 50%) 100% 1;
+  text-align: left;
+  margin-left: 265px;
+}
 
 .footer {
   background: #16222A;
@@ -156,9 +168,9 @@ article {
 
 
 @media only screen and (max-width: 900px) {
-  .container {
+  /*.container {
     width: 900px;
-  }
+  }*/
 
   .headline {
     font-size: 2em;
@@ -243,19 +255,29 @@ article {
     margin: 2px;
     border-top: 10px solid;
     width: 90%;
-    border-image: linear-gradient(to right, #6FADC8 50%, #FFF 50%) 100% 1;
+    border-image: linear-gradient(to right, #905E6A 50%, #FFF 50%) 100% 1;
     text-align: left;
     margin-left: 50px;
   }
 
-
+  .pullquote2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0px;
+    margin: 5px;
+    border-top: 12px solid #905E6A;
+    width: 90%;
+    border-image: linear-gradient(to right, #905E6A 50%, #FFF 50%) 100% 1;
+    text-align: left;
+    margin-left: 60px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
+  /*.container {
     width: 800px;
     font-size: 10px;
-  }
+  }*/
 
   figcaption {
     font-size: 8px;
@@ -336,16 +358,25 @@ article {
     margin: 0;
     border-top: 8px solid;
     width: 90%;
-    border-image: linear-gradient(to right, #6FADC8 50%, #FFF 50%) 100% 1;
+    border-image: linear-gradient(to right, #905E6A 50%, #FFF 50%) 100% 1;
     text-align: left;
     margin-left: 20px;
   }
+
+  .pullquote2 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: -40px;
+    margin-bottom: -40px;
+    border-top: 5px solid #905E6A;
+    width: 80%;
+    border-image: linear-gradient(to right, #905E6A 50%, #FFF 50%) 100% 1;
+    text-align: left;
+    margin-left: 40px;
+    line-height: 180%;
+  }
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
 
 
 
