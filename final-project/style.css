@@ -55,6 +55,8 @@ p {
 
 .container {
   font-family: 'Montserrat', sans-serif;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 img {
@@ -154,8 +156,8 @@ article {
 
 
 @media only screen and (max-width: 900px) {
-  #content {
-    width: 500px;
+  .container {
+    width: 900px;
   }
 
   .headline {
@@ -250,11 +252,8 @@ article {
 }
 
 @media only screen and (max-width: 600px) {
-  #content {
-    width: 400px;
-  }
-
   .container {
+    width: 800px;
     font-size: 10px;
   }
 
@@ -343,6 +342,10 @@ article {
   }
 }
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
 
 
 
