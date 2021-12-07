@@ -76,8 +76,23 @@ figcaption {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.pullquote {
+  font-family: georgia, serif;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 15px;
+  margin: 35px;
+  border-top: 12px solid;
+  width: 65%;
+  border-image: linear-gradient(to right, #6FADC8 50%, #FFF 50%) 100% 1;
+  text-align: left;
+  margin-left: 260px;
+}
+
 
 .footer {
   background: #16222A;
@@ -87,9 +102,6 @@ figcaption {
   text-align: center;
   font-size: 18px;
 }
-
-
-
 
 /*Scrollytelling*/
 #scrolly {
@@ -141,7 +153,6 @@ article {
 
 
 
-/*add new values for scrolly telling*/
 @media only screen and (max-width: 900px) {
   #content {
     width: 500px;
@@ -218,6 +229,24 @@ article {
   .section {
     margin-bottom: -29px;
   }
+
+  figcaption {
+    width: 70%;
+    font-size: 11px;
+  }
+
+  .pullquote {
+    font-size: 23px;
+    padding: 8px;
+    margin: 2px;
+    border-top: 10px solid;
+    width: 90%;
+    border-image: linear-gradient(to right, #6FADC8 50%, #FFF 50%) 100% 1;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -302,6 +331,16 @@ article {
     margin-bottom: -10px;
   }
 
+  .pullquote {
+    font-size: 20px;
+    padding: 8px;
+    margin: 0;
+    border-top: 8px solid;
+    width: 90%;
+    border-image: linear-gradient(to right, #6FADC8 50%, #FFF 50%) 100% 1;
+    text-align: left;
+    margin-left: 20px;
+  }
 }
 
 
@@ -315,13 +354,6 @@ article {
     font-size: 8px;
   }
 
-  .pullquote {
-    font-size: 15px;
-  }
-
-  .pullquote2 {
-    font-size: 15px;
-  }
 
   .sidebar {
     border-top: 5px solid #f4bc01;
