@@ -84,10 +84,10 @@ figcaption {
 
 .pullquote {
   font-family: georgia, serif;
-  font-size: 30px;
+  font-size: 31px;
   font-weight: 700;
   padding: 15px;
-  margin: 35px;
+  margin: 20px;
   border-top: 12px solid #905E6A;
   width: 65%;
   border-image: linear-gradient(to right, #905E6A 50%, #FFF 50%) 100% 1;
@@ -97,10 +97,10 @@ figcaption {
 
 .pullquote2 {
   font-family: georgia, serif;
-  font-size: 40px;
+  font-size: 37px;
   font-weight: 700;
   padding: 5px;
-  margin: 20px;
+  margin: 15px;
   border-top: 12px solid #905E6A;
   width: 65%;
   border-image: linear-gradient(to right, #905E6A 50%, #FFF 50%) 100% 1;
