@@ -165,7 +165,17 @@ article {
   padding-left: 300px;
 }
 
+.row {
+  font-family: georgia, serif;
+  line-height: 200%;
+  font-size: 18px;
+  text-align: left;
+}
 
+#flourish {
+  width: 70%;
+  float: right;
+}
 
 @media only screen and (max-width: 900px) {
   /*.container {
